@@ -1,0 +1,16 @@
+:root {
+  --primary: red !important;
+}
+
+.brand-logo {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: red !important ;
+  border-color: red !important;
+}
+
+.text-primary {
+  color: red !important;
+}

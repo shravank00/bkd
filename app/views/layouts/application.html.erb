@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bkd</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <div class="main">
+      <%= render 'shared/navigation' %>
+      <%= yield %>
+    </div>
+    <%= javascript_include_tag 'jquery.min.js' %>
+    <%= javascript_include_tag 'wow.min.js' %>
+    <%= javascript_include_tag 'owl.carousel.min.js' %>
+    <%= javascript_include_tag 'main.js' %>
+
+  </body>
+</html>
